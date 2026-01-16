@@ -5,16 +5,16 @@
 public class Book {
   private String title;
   private String author;
-  private String pages;
+  private int pages;
 
 /**
- * Creates a new book given the book's title, author and pages as strings.
+ * Creates a new book given the book's title, author as strings and pages as int.
  *
  * @param title    the book's title
  * @param author   the book's author
  * @param pages    the book’s pages
  */
-public Book(String title, String author, String pages) {
+public Book(String title, String author, int pages) {
   this.title = title;
   this.author = author;
   this.pages = pages;
@@ -37,7 +37,7 @@ public String getAuthor() {
 /**
  * @return the pages
  */
-public String getPages() {
+public int getPages() {
   return this.pages;
 }
 }
