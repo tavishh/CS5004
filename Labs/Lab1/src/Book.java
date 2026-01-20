@@ -21,7 +21,7 @@ public Book(String title, String author, int pages) {
 }
 
 /**
- * @return the title
+ * @return the titale
  */
 public String getTitle() {
   return this.title;
