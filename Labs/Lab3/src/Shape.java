@@ -30,15 +30,4 @@ public interface Shape extends Comparable<Shape>{
    * @return the resized Shape
    */
   Shape resize(double factor);
-
-  /**
-   * Compares this shape with the one passed to it based on their areas.
-   * if (this<s) return a negative number
-   * if (this==s) return 0
-   * if (this>s) return a positive number
-   * @param s the other shape to be compared to
-   * @return the result of the comparison
-   */
-  int compareTo(Shape s);
-  
 }

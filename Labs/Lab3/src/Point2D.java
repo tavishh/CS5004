@@ -44,4 +44,16 @@ public class Point2D {
   public double getY() {
     return y;
   }
+
+  /**
+   * Compute and return the Euclidean distance from this point to another point
+   *
+   * @param other the other point
+   * @return the euclidean distance to the other point
+   */
+  public double distanceTo(Point2D other) {
+    double dx = this.x - other.x;
+    double dy = this.y - other.y;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
 }
