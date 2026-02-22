@@ -3,10 +3,19 @@ public class Poet extends Artist{
   private String lastPublishedCollection;
 
   public Poet(String firstName, String lastName, int age, String[] genres,
-                    String publishingCompany, String lastPublishedCollection){
+                    String publishingCompany, String lastPublishedCollection) {
     super(firstName, lastName, age, genres);
-    this.lastPublishedCollection = lastPublishedCollection;
-    this.publishingCompany = publishingCompany;
+    if (lastPublishedCollection == null || lastPublishedCollection.isEmpty()) {
+      throw new IllegalArgumentException("Last Published Collection cannot be null or empty!");
+    } else {
+      this.lastPublishedCollection = lastPublishedCollection;
+    }
+
+    if (publishingCompany == null || publishingCompany.isEmpty()) {
+      throw new IllegalArgumentException("Publishing Company cannot be null or empty!");
+    } else {
+      this.publishingCompany = publishingCompany;
+    }
   }
 
   // Accessors

@@ -5,8 +5,18 @@ public class Musician extends Artist{
   public Musician(String firstName, String lastName, int age, String[] genres,
                     String recordingCompany, String lastRecordAlbum){
     super(firstName, lastName, age, genres);
-    this.lastRecordAlbum = lastRecordAlbum;
-    this.recordingCompany = recordingCompany;
+
+    if (lastRecordAlbum == null || lastRecordAlbum.isEmpty()){
+      throw new IllegalArgumentException("Last Record Album cannot be null or empty!");
+    }else {
+      this.lastRecordAlbum = lastRecordAlbum;
+    }
+
+    if (recordingCompany == null || recordingCompany.isEmpty()){
+      throw new IllegalArgumentException("Recording Company cannot be null or empty!");
+    }else{
+      this.recordingCompany = recordingCompany;
+    }
   }
 
   // Accessors
