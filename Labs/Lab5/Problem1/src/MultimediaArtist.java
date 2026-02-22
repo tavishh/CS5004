@@ -15,14 +15,17 @@ public abstract class MultimediaArtist extends Artist{
 
   // Accessors
   public String[] getMovies(){
+
     return this.movies;
   }
 
   public String[] getSeries(){
+
     return this.series;
   }
 
   public String[] getOtherMultimedia(){
+
     return this.otherMultimedia;
   }
 

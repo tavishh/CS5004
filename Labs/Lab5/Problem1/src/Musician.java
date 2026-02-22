@@ -21,10 +21,12 @@ public class Musician extends Artist{
 
   // Accessors
   public String getRecordingCompany(){
+
     return recordingCompany;
   }
 
   public String getLastRecordAlbum(){
+
     return lastRecordAlbum;
   }
 

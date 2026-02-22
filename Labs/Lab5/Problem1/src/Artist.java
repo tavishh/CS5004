@@ -38,28 +38,33 @@ public abstract class Artist {
       for (int i = 0; i < this.awards.length; i++) {
         newAwards[i] = this.awards[i];
       }
-      newAwards[this.awards.length - 1] = award;
+      newAwards[newAwards.length - 1] = award;
       this.awards = newAwards;
     }
   }
 
   public String getFirstName(){
+
     return this.firstName;
   }
 
   public String getLastName(){
+
     return this.lastName;
   }
 
   public int getAge(){
+
     return this.age;
   }
 
   public String[] getGenres(){
+
     return this.genres;
   }
 
   public String[] getAwards(){
+
     return this.awards;
   }
 

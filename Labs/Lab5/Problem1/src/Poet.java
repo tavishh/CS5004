@@ -20,10 +20,12 @@ public class Poet extends Artist{
 
   // Accessors
   public String getPublishingCompany(){
+
     return publishingCompany;
   }
 
   public String getLastPublishedCollection(){
+
     return lastPublishedCollection;
   }
 

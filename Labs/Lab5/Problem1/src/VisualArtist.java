@@ -10,6 +10,7 @@ public abstract class VisualArtist extends Artist {
 
   // Accessors
   public String[] getExhibits(){
+
     return this.exhibits;
   }
 
