@@ -6,5 +6,4 @@ public interface ListOfStrings {
   ListOfStrings filterLargerThan(int maxLength);
   boolean hasDuplicates();
   ListOfStrings removeDuplicates();
-
 }

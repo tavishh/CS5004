@@ -64,6 +64,9 @@ public class LinkedListOfStrings implements ListOfStrings{
 
   @Override
   public ListOfStrings filterLargerThan(int maxLength) {
+    if (maxLength < 0) {
+      throw new IllegalArgumentException("Max length cannot be negative!");
+    }
     LinkedListOfStrings newList = new LinkedListOfStrings();
     Node current = head;
     while (current != null){
