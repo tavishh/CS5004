@@ -48,7 +48,7 @@ public class LinkedListOfStrings implements ListOfStrings{
     return true;
   }
 
-  private void add(String value){
+  public void add(String value){
     Node newNode = new Node(value, null);
     if (this.isEmpty()){
       head = newNode;
